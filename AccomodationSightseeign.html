@@ -1,7 +1,7 @@
 <Doctype html>
     <html lang="en">
         <meta charset="UTF-8">
-        <title>UDM ICACIA - Sign Up</title>
+        <title>UDM ICACIA - Accomodation</title>
     
        
         <link rel="icon"  href="logo1.png">
@@ -15,18 +15,8 @@
 html {
 	scroll-behavior: smooth;
 }
-
-ul, nav {
-	display: inline-block;
-	list-style-type: none;
-}
-
-.banner-area nav ul li{
-display: inline-block;
-text-decoration:none;
-padding: 7px 4px;
-
-
+body {
+	font-family: century gothic;
 }
 
 h3{
@@ -36,10 +26,6 @@ h4{
 	color :rgb(84, 198, 211);
 }
 
-.banner-area nav ul li :hover{
-	color :rgb(0, 171, 189);
-	
-}
 
 a {
 	text-decoration: none;
@@ -55,13 +41,7 @@ a1 {
 	color :rgb(0, 171, 189);
 }
 
-a2 {
-	color :rgb(0, 171, 189);
-}
 
-a3 {
-	color :WHITE;
-}
 
 .container{
 	width:110%;
@@ -70,7 +50,7 @@ a3 {
 	border-radius:10px;
 	background-position: center;
 	align-items:center;	
-    padding-left:17%;
+ 
 }
 
 .container1{
@@ -105,7 +85,7 @@ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 110px 100px;
+	padding: 110px 0px;
     width:100%;
 }
 @media (max-width:1000px) {
@@ -132,6 +112,12 @@ section p {
 	min-height: 100vh;
 	color: #fff;
 	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
 }
 .banner-area .banner-img {
 	background-image: url(https://archive.factordaily.com/wp-content/uploads/2018/01/Frrole_Lead.gif);
@@ -169,6 +155,7 @@ section p {
 	border-radius: 50px;
 	text-transform: uppercase;
 }
+
 @media (max-width:800px) {
 	.banner-area {
 		min-height: 600px;
@@ -259,11 +246,55 @@ ul.about-content {
 		padding: 8px;
 	}
 }
-/*service area*/
+/*accomodation area*/
 
-#contact {
-	background: #fff;
+#accomodation {
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(turtle.gif);
+	background-position: center;
+	background-size: cover;
 }
+
+ul.accomodation-content {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.accomodation-content li {
+	padding: 0 30px;
+	flex-basis: 33%;
+	text-align: center;
+}
+.accomodation-content li i {
+	font-size: 50px;
+	color: crimson;
+	margin-bottom: 25px;
+}
+.accomodation-content li p {
+	margin: 0;
+	color:white;
+}
+.accomodation-content li h1 {
+	color:white;
+}
+@media (max-width: 1000px) {
+	.accomodation-content li {
+		flex-basis: 100%;
+		margin-bottom: 65px;
+	}
+	.accomodation-content li:last-child {
+		margin-bottom: 0;
+	}
+	.accomodation-content li p {
+		padding: 0;
+	}
+}
+
+
 ul.contact-content {
 	width: 100%;
 	display: -webkit-flex;
@@ -287,6 +318,9 @@ ul.contact-content {
 .contact-content li p {
 	margin: 0;
 }
+.contact-content li h1 {
+	color:black;
+}
 @media (max-width: 1000px) {
 	.contact-content li {
 		flex-basis: 100%;
@@ -299,7 +333,6 @@ ul.contact-content {
 		padding: 0;
 	}
 }
-
 /*footer*/
 
 footer {
@@ -381,98 +414,6 @@ h2
 	text-align: center;
 	letter-spacing: 0.1em;
 }
-.inputBox 
-{
-	position: relative;
-	width: 300px;
-	margin-top: 35px;
-}
-.inputBox input 
-{
-	position: relative;
-	width: 100%;
-	padding: 20px 10px 10px;
-	background: transparent;
-	outline: none;
-	box-shadow: none;
-	border: none;
-	color:white;
-	font-size: 1em;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-	z-index: 10;
-}
-.inputBox span 
-{
-	position: absolute;
-	left: 0;
-	padding: 20px 0px 10px;
-	pointer-events: none;
-	font-size: 1em;
-	color: #8f8f8f;
-	letter-spacing: 0.05em;
-	transition: 0.5s;
-}
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span 
-{
-	color:rgb(0,125,190);
-	transform: translateX(0px) translateY(-34px);
-	font-size: 0.75em;
-}
-.inputBox i 
-{
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 2px;
-	background:black;
-	border-radius: 4px;
-	overflow: hidden;
-	transition: 0.5s;
-	pointer-events: none;
-	z-index: 9;
-}
-.inputBox input:valid ~ i,
-.inputBox input:focus ~ i 
-{
-	height: 44px;
-}
-.links 
-{
-	display: flex;
-	justify-content: space-between;
-}
-.links a 
-{
-	margin: 10px 0;
-	font-size: 0.75em;
-	color: #8f8f8f;
-	text-decoration: beige;
-}
-.links a:hover, 
-.links a:nth-child(2)
-{
-	color: rgb(0,171,189);
-}
-input[type="submit"]
-{
-	border: none;
-	outline: none;
-	padding: 11px 25px;
-	background: #00ccff;
-	cursor: pointer;
-	border-radius: 4px;
-	font-weight: 600;
-	width: 100px;
-	margin-top: 10px;
-    color:white;
-}
-input[type="submit"]:active 
-{
-	opacity: 0.8;
-}
 
 .container{
 	width:100%;
@@ -513,7 +454,7 @@ input[type="submit"]:active
 
 }
 .small-container h2{
-    color:black;
+	color:#00ccff;
 }
 .col-4{
 	flex-basis: 25%;
@@ -527,7 +468,7 @@ input[type="submit"]:active
 	height: 330px;
 }
 h2{
-	color: black;
+	color:#00ccff;
 	
 }
 h4{
@@ -595,9 +536,7 @@ small{
 h1{
 	color: white;
 }
-p{
-	color: #00ccff;
-}
+
 
 .btn{
 	width:3000px;
@@ -723,11 +662,7 @@ img{
 		
 	}
 }
-*{
-	margin:0;
-	padding:0;
-	font-family: sans-serif;
-}
+
 .container{
 	width:100%;
 	height:100vh;
@@ -738,15 +673,7 @@ img{
 	padding-right:8%;
 	box-sizing:border-box;
 }
-.navbar{
-	display: flex;
-	align-items: center;
-	padding: 20px;
-}
-nav{
-	flex: 1;
-	text-align:right;
-}
+
 nav ul{
 	display: inline-block;
 	list-style-type: none;
@@ -755,29 +682,72 @@ nav ul li{
 	display: inline-block;
 	margin-right: 20px;
 }
-.navbar a{
-	text-decoration: none;
-	color: #FA8070;
-}
 
-.navbar a:hover{
-	background-color: black;
-	color:#BC544B;
-	transition:0.5s ease;
-	border:2px solid #E5E7FA ;
-	padding: 3px;
-}
-a1{
-	background-color: black;
-	color:#BC544B ;
-	transition:0.5s ease;
-	border:2px solid #E5E7FA;
-	padding: 3px;
-}
+
+
 
 h1{
 	color: white;
 }
+.contact ::content h2{
+	color:#00ccff;
+}
+h2{
+	color:#00ccff;
+}
+.line:before{
+	content: '';
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	
+	z-index:1;
+}
+
+.line:after{
+	content:'';
+	position: absolute;
+	display:block;
+	top:260%;
+	left:33.3%;
+	width:33.3%;
+	height:33.3%;
+	height: 1px;
+	background: #00ccff;;
+	z-index:2;
+	transform-origin:left;
+	transform:scaleX(0);
+	animation: animating 2s infinite alternate;
+}
+@keyframes animating{
+	0%{
+		transform: translateX(0) scaleX(0);
+		transform-origin:left;
+		left:33.3%;
+		right:auto;	
+	}
+	45%{
+		transform: translateX(0) scaleX(1);
+		transform-origin:left;
+		left:33.3%;
+		right:auto;	
+	}
+	50%{
+		transform: translateX(0) scaleX(1);
+		transform-origin:right;
+		left:auto;
+		right:33.3%;	
+	}
+	100%{
+		transform: translateX(0) scaleX(0);
+		transform-origin:right;
+		left:auto;
+		right:33.3%;	
+	}
+}
+
 
 </style>
     </head>
@@ -797,62 +767,53 @@ h1{
             <p></p>
             <p></p>
             <nav>
-                <ul>
-                    <li>
-                        <a2 href="website.html">Home</a2>
-                    </li>
-                    <li>
-                        <a href="website.html">About US</a>
-                    </li>
-                    <li>
-                        <a href="#website.html">About Driems</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="Signup.html">Sign up</a>
-                    </li>
-                    <li>
-                        <a href="gallery.html">Registration</a>
-                    </li>
-                    <li>
-                        <a href="shop.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Sponsor</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Keynotes/Speakers</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Commitee members</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Call for Papers</a>
-                    </li>
-                    <li>
-                        <a href="login.html">Sponsor</a>
-                    </li>
-                </ul>
-            </nav>
+				<ul>
+					<li>
+						<a href="#home">Home</a>
+					</li>
+					<li>
+						<a href="#about">About US</a>
+					</li>
+					<li>
+						<a href="#services">About Driems</a>
+					</li>
+					<li>
+						<a href="Signup.html">Sign up</a>
+					</li>
+					<li>
+						<a href="Registration.html">Registration</a>
+					</li>
+					<li>
+						<a href="SponsorContact.html">Contact</a>
+					</li>
+					<li>
+						<a href="SponsorContact.html">Sponsor</a>
+					</li>
+					<li>
+						<a2 href="AccomodationSightseeign.html">Gallery</a2>
+					</li>
+					<li>
+						<a href="KeynoteSpeakers.html">Keynotes/Speakers</a>
+					</li>
+					<li>
+						<a href="">Commitee members</a>
+					</li>
+					<li>
+						<a href="">Call for Papers</a>
+					</li>
+					
+				</ul>
+			</nav>
             
         </section>
-        
+		<br>
+		
+		<section class="contact-area" id="contact">
+			<h3 class="section-title">WELCOME TO MAURITIUS</h3>
+		</section>
                 
                     <div class="small-container">
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        
-                        <h2 class="title"><b> WELCOME TO MAURITIUS</b></h2>
-                        <br>
-                        
+            
 	<div class="gallery">
 		<div class="gallery-item">
 			<img src="http://magazine.holidays-mauritius.co.uk/wp-content/uploads/2016/03/animated.gif" alt="">
@@ -880,33 +841,139 @@ h1{
 		</div>
 	</div>
     
-    <section class="contact-area" id="contact">
-		<h3 class="section-title">Contact</h3>
+    <section class="accomodation-area" id="accomodation">
+		<h3 class="section-title">ACCOMODATION</h3>
+		
+		<br>
+		<br>
+		<br>
+		<ul class="accomodation-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>DOMAINE DE GRAND BAIE</h1>
+				<h2>Excellent reviews</h2>
+				<br>
+				<img src="https://api.connectingtravel.com/media/photo-by-id-or-name/250/1200/858" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>OUTRIGGER RESORT</h1>
+				<h2>Good reviews</h2>
+				<br>
+				<img src="https://www.just2mauritius.com/just2mauritius/images/outrigger-mauritius/OR18.JPG" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>HOLIDAY INN</h1>
+				<h2>Good reviews</h2>
+				<br>
+				<img src="http://pix10.agoda.net/hotelImages/546/546863/546863_15061018340029196262.jpg?s=1024x768" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			
+		</ul>
+		<br>
+		<br>
+		<br>
+		<div class="line"></div>
+		<ul class="accomodation-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>CONSTANCE BELLE MARE</h1>
+				<h2>Excellent Reviews</h2>
+				<br>
+				<img src="https://www.bucketlistpublications.com/wp-content/uploads/2015/02/IMG_4347.jpg" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>LA PENINSULA</h1>
+				<h2>Good Reviews</h2>
+				<br>
+				<img src="https://hi-cdn.t-rp.co.uk/images/hotels/1602054/1?width=870&height=480&crop=false" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>LUX GRAND GAUBE</h1>
+				<h2>Excellent Reviews</h2>
+				<br>
+				<img src="https://media.oovatu.com/43-1200/lux-grand-baie_112021.jpg" alt="">
+				<p>Popular with guests bookign accommodations in Mauritius</p>	
+			</li>
+			
+		</ul>
+	</section>
+    <br>
+	<br>
+	<section class="contact-area" id="contact">
+		<h3 class="section-title">SIGHT SEEING</h3>
+		<p>Mauritius will enchant you, will uplift your soul, making you feel that you belong to the chosen few. Every visitor enjoys personal attention. Every encounter is an opportunity to discover a friendly face. Behind each smile lies the promise of a unique holiday. The contrast of a multitude of colours and tastes, the island, set in its turquoise sea, is an oasis of peace and tranquillity. Mauritius, a melting pot where past and present are smoothly blended together, offers an essential beauty that will compel to return to its shores time and time again. May your stay with us remain engraved in your memory forever.</p>
+		<br>
+		<br>
+		<br>
 		<ul class="contact-content">
 			<li>
 				<i class="fa fa-map-marker"></i>
-				<h2>Want to send us a message?</h2>
+				<h1>HISTORY</h1>
+				<h2>Come and visit Port Louis.</h2>
 				<br>
-				<p><a href="">Register now</a><br>
+				<img src="https://cdn.britannica.com/09/93509-050-4F6AD522/waterfront-tourists-Mauritius-Port-Louis.jpg" alt="">
+				<p>There are several places like the Central Market, China Town, the Caudan Waterfront and Domaine des Pailles.</p>	
 			</li>
 			<li>
-				<i class="fa fa-phone"></i>
-				<h2>Send us an email on:</h2>
+				<i class="fa fa-map-marker"></i>
+				<h1>BEACH</h1>
+				<h2>Have a relaxing day.</h2>
 				<br>
-				<p>icacie2022@gmail.com</p>
-				<p>icacie2022@driems.ac.in</p>
+				<img src="https://st3.depositphotos.com/3720453/33315/i/450/depositphotos_333159718-stock-photo-woman-posing-in-transparent-blue.jpg" alt="">
+				<p>There are several places like the Central Market, China Town, the Caudan Waterfront and Domaine des Pailles.</p>	
 			</li>
 			<li>
-				<i class="fa fa-envelope"></i>
-				<h2>Call us on:</h2>
+				<i class="fa fa-map-marker"></i>
+				<h1>MARINE LIFE</h1>
+				<h2>Explore underwater </h2>
 				<br>
-				<p>8327716681<br>
-				7978512365<br>
-			8895033020</p>
+				<img src="https://s3-eu-west-1.amazonaws.com/rhinoafrica-blog/wp-content/uploads/2015/07/7637255118_38d19155d2_b.jpg" alt="">
+				<p>There are several places like the Central Market, China Town, the Caudan Waterfront and Domaine des Pailles.</p>	
 			</li>
+			
+		</ul>
+		<br>
+		<br>
+		<br>
+		<div class="line"></div>
+		<ul class="contact-content">
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>EATING OUT</h1>
+				<h2>Experience Great Mauritian Cuisine</h2>
+				<br>
+				<img src="https://www.findingtheuniverse.com/wp-content/uploads/2020/01/Mauritian-curry_by_Laurence-Norah.jpg" alt="">
+				<p>The dinning possibilities are vast, consisting of hundreds of restaurants all around Mauritius offering a selection of local cuisines: Mauritian, Creole specific international cuisines such as Italian, Chinese, French, Japanese and many more.</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>SHOPPING</h1>
+				<h2>Find treasures of the Island</h2>
+				<br>
+				<img src="https://i1.wp.com/www.atterbury.co.za/wp-content/uploads/2015/05/IMG_2351.jpg" alt="">
+				<p>Le Caudan Waterfront and shopping malls like Bagatelle merges the world’s most desirable brands, shopping convenience, entertainment, and everyday leisure, all in a majestic setting</p>	
+			</li>
+			<li>
+				<i class="fa fa-map-marker"></i>
+				<h1>DEEP SEA FISHING</h1>
+				<h2>Explore our lagoons and sea creatures</h2>
+				<br>
+				<img src="https://elite-voyage.com/uploads/images/finshing_east_5_841x530.jpg" alt="">
+				<p>In December,deep sea fishing competition called the Marlin World Cup is hosted by La Pirogue Hotel</p>	
+			</li>
+			
 		</ul>
 	</section>
-   
+    
                         </div>
                         <footer>
                             
